@@ -142,7 +142,6 @@ body {
 
 .about-product-video {
 	display: block;
-	background-color: #445161;
 	float: right;
 	width: 430px;
 	min-height: 245px;
@@ -552,7 +551,31 @@ body {
 	outline: none;
 }
 
+input {
+  margin: 0 0 5px 0;
+}
+
+input:active {
+  border:2px solid green;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+	color: #445161;
+}
+input[type="text"]::-moz-placeholder {
+	color: #445161;
+}
+/* Firefox 19+ */
+input[type="text"]:-moz-placeholder {
+	color: #445161
+}
+/* Firefox 18- */
+input[type="text"]:-ms-input-placeholder {
+	color: #445161;
+}
+
 .contasts-form textarea {
+	display: block;
 	width: 100%;
 	min-height: 170px;
 	margin: 0 0 20px 0;
@@ -562,8 +585,12 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	outline: none;
 	resize: none;
+	outline: none;
+}
+
+textare:active {
+	border: 2px solid green;
 }
 
 .contacts-form-button {

@@ -1,0 +1,159 @@
+.body {
+	margin: 0;
+	padding: 0;
+
+}
+
+.container {
+	width: 100%;
+}
+
+video {
+	display: block;
+	position: fixed;
+	z-index: -1;
+	overflow: hidden;
+	border: 1px solid red;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.land-title {
+	display: block;
+	position: fixed;
+	width: 100%;
+	font-family: 'Arial';
+	color: #fff;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 0 1px 1px #000a33;
+}
+
+.land-title:after {
+	content: "";
+	clear: both;
+}
+
+form {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	width: 30%;
+	margin: 150px 0 0 820px;
+	border: 2px solid #445161;
+	border-radius: 20px;
+	font-family: 'Arial';
+	color: azure;
+	font-weight: 500;
+	background: rgba(105, 214, 819, 0.4);
+	
+}
+
+.input,
+.textarea {
+	outline: none;
+	padding-left: 5px;
+	border: 1px solid darkslategray;
+	border-radius: 5px;
+	color: maroon;
+	outline: none;
+}
+
+input,
+textarea:focus {
+	border: 1px solid maroon;
+}
+
+.input {
+	height: 25px;
+	color: maroon;
+}
+
+.form-field {
+	clear: both;
+	text-align: right;
+	line-height: 25px;
+}
+
+.form-label-right {
+	float: left;
+	padding: 0 10px 0 0;
+}
+
+.name-pas-left {
+	float: left;
+}
+
+select {
+	width: 96%;
+	margin: 0 0 0 10px;
+	border-radius: 10px;
+}
+
+textarea {
+	display: block;
+	width: 95%;
+	margin: 10px auto;
+	resize: none;
+	border-radius: 10px;
+}
+
+fieldset {
+	border: 1px dotted gray;
+}
+
+legend {
+	text-align: center;
+}
+
+.buttons-send-reset {
+	margin: -10px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+input[type="submit"] {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 45%;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+input[type="reset"] {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 45%;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background-color: cadetblue;
+	border: 1px solid maroon;
+	outline: none;
+	opacity: .9;
+}
+
+input[type="submit"]:active {
+	opacity: .6;
+}
+
+input[type="reset"]:hover {
+	background-color: cadetblue;
+	border: 1px solid maroon;
+	outline: none;
+	opacity: .9;
+}
+
+input[type="reset"]:active {
+	opacity: .6;
+}
+

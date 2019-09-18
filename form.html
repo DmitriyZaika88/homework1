@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Form</title>
+      <link rel="stylesheet" href="/css/form-style.css">
+   </head>
+   <body>
+      <div class="conatiner">
+         <video autoplay loop muted>
+            <source src="/video/Wall-Sketching.mp4" type="video/mp4" min-width:100% min-height:100%>
+            <source src="/video/Wall-Sketching.webm" type="video/webm" min-width:100% min-height:100%>
+            <source src="/video/Wall-Sketching.ogv" type="video/ogg" / min-width:100% min-height:100%>
+            <p>Your browser doesn't support HTML5 video.</p>
+         </video>
+         <div class="land">
+            <span class="land-title">Smartlanding</span>
+            <form action="#" method="post">
+               <fieldset>
+                  <legend>Personal information</legend>
+                  <div class="name-pas-left">
+                     <div class="form-field">
+                        <label class="form-label-right" for="txt">Name</label>
+                        <input id="txt" type="text" autofocus required laceholder="Иванов Иван Иванович" required> 
+                     </div>
+                     <div class="form-field">
+                        <label class="form-label-right" for="password">Password</label>
+                        <input type="password" required placeholder="123456789" required> 
+                     </div>
+                  </div>
+               </fieldset>
+               <fieldset>
+                  <legend>Select your favorite products</legend>
+                  <div>
+                     <input type="checkbox">Smartphones
+                     <input type="checkbox">Cameras
+                     <input type="checkbox">Smart wathces
+                     <input type="checkbox">Laptops 
+                  </div>
+               </fieldset>
+               <fieldset>
+                  <legend>First time on our web-site?</legend>
+                  <input type="radio" name="radio">Yes
+                  <input type="radio" name="radio">No 
+               </fieldset>
+               <div>
+                  <Legend>Acceptable time to call you</Legend>
+                  <select name="list" id="list">
+                     <option value="Time-selector">Time selector</option>
+                     <option value="11-12">11:00-12:00</option>
+                     <option value="12-13">12:00-13:00</option>
+                     <option value="13-14">13:00-14:00</option>
+                     <option value="14-15">14:00-15:00</option>
+                     <option value="15-16">15:00-16:00</option>
+                     <option value="16-17">16:00-17:00</option>
+                     <option value="17-18">17:00-18:00</option>
+                  </select>
+               </div>
+               <textarea autofocus name="coment" id="coment" cols="30" rows="10"></textarea>
+               <div class="buttons-send-reset">
+                  <input type="submit" value="send">
+                  <input type="reset" value="reset"> 
+               </div>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
